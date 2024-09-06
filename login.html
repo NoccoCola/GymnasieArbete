@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create An Account</title>
+    <link rel="stylesheet" href="css/Signup-Stylesheet.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="js/validation.js" defer></script>
+    <noscript>Couldn't load script</noscript>
+</head>
+
+<body>
+
+    <div class="Login-container">
+        <div class="form-login">
+            <h2>Sign Up</h2>
+
+            <form action="process-signup.php" method="post" id="signup" autocomplete="off" novalidate>
+                <div class="input">
+                    <input type="text" id="username" name="username" placeholder="Your Username">
+                </div>
+
+                <div class="input">
+                    <input type="text" id="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="input">
+                    <input type="password" id="password" name="password" placeholder="Your Password">
+                </div>
+
+                <button type="submit" class="button">Sign Up</button>
+                <div class="Signup">Already Have An Account? <a href="login.php">Log In</a></div>
+            </form>
+        </div>
+</body>
+
+</html>
