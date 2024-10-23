@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+html,
+body {
+    --blue: #3e6d86;
+    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: rgb(51, 49, 49);
+    background: -moz-linear-gradient(100deg, rgba(51, 49, 49, 1) 0%, rgba(31, 30, 30, 1) 100%);
+    background: -webkit-linear-gradient(100deg, rgba(51, 49, 49, 1) 0%, rgba(31, 30, 30, 1) 100%);
+    background: linear-gradient(100deg, rgba(51, 49, 49, 1) 0%, rgba(31, 30, 30, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#333131", endColorstr="#1f1e1e", GradientType=1);
+}
+
+* {
+    font-family: "Schibsted Grotesk", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.Login-container {
+    min-height: 100vh;
+    border-radius: 10px;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    margin-bottom: 2vh;
+    font-size: 1.5em;
+}
+
+.form-login {
+    min-height: 25rem;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 37, 37);
+    border: 1px solid white;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 22px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 22px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 22px -4px rgba(0, 0, 0, 0.75);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh;
+
+}
+
+input {
+    height: 2vh;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(41, 40, 40);
+    padding: 2vh;
+    text-align: center;
+    color: white;
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: var(--blue);
+    margin: 3vh;
+    width: 60%;
+    border-radius: 5px;
+    height: 5.5vh;
+}
+
+label {
+    margin-top: 2vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

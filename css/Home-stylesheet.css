@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Sans-serif;
+}
+
+body {
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
+.title nav {
+    opacity: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    height: 10vh;
+    position: absolute;
+    gap: 5vw;
+    z-index: 999;
+    color: white;
+}
+
+header h1 {
+    padding-right: 5vw;
+    padding-left: 4vw;
+    padding-top: 4vh;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 5vh;
+    min-width: 40vw;
+    color: black;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 4vw;
+    padding-top: 4vh;
+    gap: 3vw;
+    z-index: -9999;
+    font-family: "EB Garamond", serif;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 2vh;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding-top: 10vh;
+    color: black;
+}
+
+.title h1 {
+    font-family: "Nanum Myeongjo", serif;
+    border-bottom: 1px solid red;
+    padding-bottom: 1vh;
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+.title nav {
+    padding-top: 3vh;
+}
+
+.title a {
+    color: black;
+    text-decoration: none;
+    margin: 2vw;
+    font-size: 2.5vh;
+}
+
+.title a:hover {
+    border-bottom: 1px solid grey;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 2s both;
+}
+
+.fa {
+    padding: 0.8rem;
+
+    text-align: center;
+    text-decoration: none;
+    min-width: 2.5vw;
+    color: black;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 750px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#main:hover {
+    transform: scale(1.05);
+}
+
+#main {
+    transition: transform .2s;
+    margin: 0 auto;
+    cursor: pointer;
+    /* Animation */
+}
+
+button {
+    background-color: white;
+    padding: 1vh;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#long-card {
+    -webkit-box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transform: translate(calc(-50% + 15px), -50%);
+}
+
+.hover {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.cursorinnerhover {
+    width: 50px;
+    z-index: 999;
+    height: 50px;
+    opacity: .5;
+}
